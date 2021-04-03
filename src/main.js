@@ -56,6 +56,18 @@ viewSavedButton.addEventListener('click', changeViewSavedView);
 
 saveCoverButton.addEventListener('click', saveCurrentCover);
 
+// savedCovers[i].addEventListener("dblclick", function() {
+//   savedCovers[i].classList.add('hidden');
+// });
+
+// savedCovers.addEventListener('dblclick', deleteSavedCover);
+
+// for(var i = 0; i < savedCovers.length; i++) {
+//       savedCovers[i].addEventListener("dblclick", deleteSavedCover(i));
+// }
+
+
+
 // Create your event handlers and other functions here 👇
 function changeFormView() {
   homeView.classList.add('hidden');
@@ -73,7 +85,7 @@ function changeViewSavedView() {
   viewSavedView.classList.remove('hidden');
   homeView.classList.add('hidden');
   formView.classList.add('hidden');
-  showSavedCovers();
+  // showSavedCovers();
 }
 
 function changeHomeView() {
@@ -113,30 +125,19 @@ function showNewBookHome() {
 function saveCurrentCover() {
   if (!savedCovers.includes(currentCover)) {
     savedCovers.push(currentCover);
+    showSavedCovers();
   }
 }
 
 function showSavedCovers() {
-  for (var i = 0; i < savedCovers.length; i++) {
-    savedCoversSection.innerHTML += `
-      <div class="mini-cover">
-        <img class="mini-cover" src="${savedCovers[i].cover}">
-        <h1 class="cover-title">${savedCovers[i].title}</h1>
-        <h2 class="tagline">A tale of ${savedCovers[i].tagline1} and ${savedCovers[i].tagline2}</h2>
-      </div>
+  savedCoversSection.innerHTML += `
+    <div class="mini-cover">
+      <img class="mini-cover" src="${currentCover.cover}">
+      <h1 class="cover-title">${currentCover.title}</h1>
+      <h2 class="tagline">A tale of ${currentCover.tagline1} and ${currentCover.tagline2}</h2>
+    </div>
     `
-  }
 }
-
-// //Reflect changes from above
-// saveCoverButton.addEventListener('click', function() {
-//
-//
-//   randomCoverButton.style.display = "none";
-//   homeView.classList.add('hidden');
-//   saveCoverView.classList.remove('hidden');
-
-
 // We've provided one function to get you started
 function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
