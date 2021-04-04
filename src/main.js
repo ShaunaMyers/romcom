@@ -126,10 +126,26 @@ function deleteSavedCover() {
 
 function saveCustomBook() {
   event.preventDefault();
-  if (inputCover.value && inputTitle.value && inputFirstDescriptor.value && inputSecondDescriptor.value) {
+  if (validateForm()) {
     createNewBook();
     showNewBookHome();
   }
+}
+
+function validateForm() {
+  if (!inputCover.value) {
+    alert('Please enter a cover image URL!');
+    return false;
+  }
+  if (!inputTitle.value) {
+    alert('Please enter a title!');
+    return false;
+  }
+  if (!inputFirstDescriptor.value || !inputSecondDescriptor.value) {
+    alert('Please enter two descriptors!');
+    return false;
+  }
+  return true;
 }
 
 function getRandomIndex(array) {
