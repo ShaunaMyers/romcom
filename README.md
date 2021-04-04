@@ -60,3 +60,4 @@ This will take you back to the Home View, where you can save your new cover to t
 
 ## <a id="special-thanks">Special Thanks</a>
 - [Kayla Wood](https://github.com/kaylaewood) - Our wonderful instructor and Project Manager; Thank you for your wisdom and insights on clean and elegant code!
+- [Zachary Nemeroff](https://github.com/ZaneMeroff) - Mentor and reviewer; Thank you for sharing your suggestions and developer wisdom with us!
