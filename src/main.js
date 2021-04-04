@@ -30,7 +30,7 @@ var savedCovers = [];
 
 
 
-window.addEventListener('load', makeRandomCover);
+window.addEventListener('DOMContentLoaded', makeRandomCover);
 
 randomCoverButton.addEventListener('click', makeRandomCover);
 
