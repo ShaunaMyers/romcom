@@ -15,7 +15,7 @@
 
 ## <a id="how-to-use-app">How to Use the App</a>
 ### View the App in your Browser
-[Access the latest version here](https://lkessell.github.io/romcom/)
+[Access the latest version here](https://shaunamyers.github.io/romcom/)
 ### Home View
 ![image](https://user-images.githubusercontent.com/77205456/113491612-29174080-94a0-11eb-8b78-baa2f03f1783.png)  
 When opening the app, you will be taken to the home view. On this page, you will see a randomly generated cover with a random title and tagline. You can click the "Show New Random Cover" button to generate a new random cover. If a particular cover strikes your fancy, click the "Save Cover" button to save it in the Saved Covers section. You can click the "View Saved Covers" button to see all of your currently saved covers.  
